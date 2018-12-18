@@ -35,3 +35,15 @@ body {
 .mdc-top-app-bar {
   z-index: 7;
 }
+
+.mdc-top-app-bar__navigation-icon {
+  display: none;
+}
+
+// BREAKPOINT 900px
+
+@media (max-width: 900px) {
+  .mdc-top-app-bar__navigation-icon {
+    display: block;
+  }
+}
