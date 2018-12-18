@@ -1,0 +1,37 @@
+// Material Theming
+
+// Define theme variables before importing any MDC Web component styles
+// $mdc-theme-primary: white;
+
+// Import the styles for each MDC Web component
+@import "@material/drawer/mdc-drawer";
+@import "@material/elevation/mdc-elevation";
+@import "@material/list/mdc-list";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/typography/mdc-typography";
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.app-bar {
+  position: absolute;
+}
+
+// only apply this style if below top app bar
+.mdc-top-app-bar {
+  z-index: 7;
+}
