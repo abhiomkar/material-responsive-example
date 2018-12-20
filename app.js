@@ -6,8 +6,8 @@ const topAppBar = new MDCTopAppBar(topAppBarElement);
 
 const drawerElement = document.querySelector('.mdc-drawer');
 
-const initDismissibleDrawer = () => {
-  drawerElement.classList.add("mdc-drawer--dismissible");
+const initModalDrawer = () => {
+  drawerElement.classList.add("mdc-drawer--modal");
   const drawer = MDCDrawer.attachTo(drawerElement);
   drawer.open = false;
   topAppBar.setScrollTarget(document.getElementById('main-content'));
@@ -16,16 +16,14 @@ const initDismissibleDrawer = () => {
   });
 }
 if (window.matchMedia("(max-width: 900px)").matches) {
-  initDismissibleDrawer();
+  initModalDrawer();
 }
 
 const resizeHandler = () => {
   if (window.matchMedia("(max-width: 900px)").matches) {
-    initDismissibleDrawer();
+    initModalDrawer();
   } else {
-    drawerElement.classList.remove("mdc-drawer--dismissible");
-    drawer.open = true;
-    !!drawer && drawer.destroy();
+    drawerElement.classList.remove("mdc-drawer--modal");
   }
 }
 window.addEventListener('resize', resizeHandler);

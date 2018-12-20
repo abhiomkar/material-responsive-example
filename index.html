@@ -11,7 +11,7 @@
   <body class="mdc-typography">
     <aside class="mdc-drawer">
       <div class="mdc-drawer__content">
-        <div class="mdc-list">
+        <nav class="mdc-list">
           <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
             <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
             <span class="mdc-list-item__text">Inbox</span>
@@ -24,16 +24,20 @@
             <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
             <span class="mdc-list-item__text">Drafts</span>
           </a>
-        </div>
+        </nav>
       </div>
     </aside>
   
+    <div class="mdc-drawer-scrim"></div>
     <div class="mdc-drawer-app-content">
       <header class="mdc-top-app-bar">
         <div class="mdc-top-app-bar__row">
           <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
             <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
             <span class="mdc-top-app-bar__title">App Bar</span>
+          </section>
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+            <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Search" alt="Search">search</a>
           </section>
         </div>
       </header>
