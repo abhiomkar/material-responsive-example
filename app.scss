@@ -1,7 +1,7 @@
 // Material Theming
 
 // Define theme variables before importing any MDC Web component styles
-// $mdc-theme-primary: white;
+$mdc-theme-primary: rgba(0, 0, 0, 0.87);
 
 // Import the styles for each MDC Web component
 @import "@material/drawer/mdc-drawer";
@@ -11,12 +11,15 @@
 @import "@material/typography/mdc-typography";
 
 body {
+  background: #e1e1e1;
   display: flex;
   height: 100vh;
   margin: 0;
 }
 
 .mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color-accessible(white);
+  @include mdc-top-app-bar-icon-ink-color(rgba(0, 0, 0, 0.6));
   position: absolute;
 }
 
