@@ -1,17 +1,14 @@
-// Material Theming
-
 // Define theme variables before importing any MDC Web component styles
 $mdc-theme-primary: rgba(0, 0, 0, 0.87);
 
 // Import the styles for each MDC Web component
 @import "@material/drawer/mdc-drawer";
-@import "@material/elevation/mdc-elevation";
 @import "@material/list/mdc-list";
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/typography/mdc-typography";
 
 body {
-  background: #e1e1e1;
+  background: #f5f5f5;
   display: flex;
   height: 100vh;
   margin: 0;
@@ -32,6 +29,7 @@ body {
 .main-content {
   overflow: auto;
   height: 100%;
+  margin: 20px 50px;
 }
 
 // BREAKPOINT min-width:900px
