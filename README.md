@@ -8,6 +8,7 @@ Read more about the [Material Design responsive layout grid](https://material.io
 ## Run this project
 1. From the root directory, run: 
 ```
+npm install
 npm start
 ```
 2. Point your browser to http://localhost:8080/
