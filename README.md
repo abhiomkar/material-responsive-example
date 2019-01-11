@@ -5,6 +5,13 @@ This simple website template uses Material Components to implement a permanent n
 
 Read more about the [Material Design responsive layout grid](https://material.io/design/layout/responsive-layout-grid.html).
 
+## Run this project
+1. From the root directory, run: 
+```
+npm start
+```
+2. Point your browser to http://localhost:8080/
+
 ## Interested in learning more?
 Check out the [Material Components for the Web](https://github.com/material-components/material-components-web) documentation to add more components and styling.
 
